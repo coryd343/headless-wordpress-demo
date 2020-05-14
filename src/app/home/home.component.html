@@ -1,0 +1,10 @@
+<p>
+  home works!
+</p>
+<button mat-raised-button color="warn" (click)="getPosts()">Get posts!</button>
+<div id="post-block" *ngIf="postList.length > 0">
+  <mat-card *ngFor="let post of postList">
+    <div class="post" >{{post.content.rendered}}</div>
+  </mat-card>
+  
+</div>
